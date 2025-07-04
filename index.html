@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landpage.css">
+    <title>Página web</title>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a  class="logo"><img>logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="conteudo">
+            <h2>Olá, <br> Eu sou <span>David Richard</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Esse eius quasi temporibus sed, voluptatem et excepturi
+                 quaerat hic fuga veniam inventore magnam, harum aperiam
+                  corporis id saepe, quod veritatis incidunt.
+            </p>
+            <a href="">contate-me</a>
+        </div>
+        <ul class="sci">
+            <li><a href=""><img src="instagram.png" alt=""></a></li>
+             <li><a href=""><img src="facebook.png" alt=""></a></li>
+             <li><a href=""><img src="linkedin.png" alt=""></a></li>
+            <li><a href=""><img src="twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <div id="navegar">
+        <ul>
+            <li><a class="bar" href="">Home</a></li>
+             <li><a class="bar" href="">sobre</a></li>
+              <li><a class="bar" href="">Serviços</a></li>
+             <li><a class="bar" href="">contato</a></li>
+            <li><a class="bar" href="">portflio</a></li>
+        </ul>
+    </div>
+  <script>
+    function toggle(){
+        var sec = document.getElementById('sec');
+        var nav = document.getElementById('navegar');
+        sec.classList.toggle('active')
+        nav.classList.toggle('active')
+    }
+  </script>  
+</body>
+</html>
